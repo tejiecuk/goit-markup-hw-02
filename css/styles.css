@@ -7,6 +7,8 @@
   --secondary-bgr: #2f303a;
   --boxes-color: #eeeeee;
   --filter-color: #f5f4fa;
+  --hero-button: #188ce8;
+
   /* Font */
   --logo-font: "Raleway", sans-serif;
   --family-font: "Roboto", sans-serif;
@@ -15,9 +17,7 @@ body {
   font-family: var(--family-font);
   color: var(--color-text);
   background-color: var(--primary-bgr);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.7;
 }
 .btn:hover,
 .btn:focus {
@@ -90,11 +90,25 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  background-color: var(--filter-color);
+  background-color: var(--logo-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hero-button);
 }
 /* About us */
-.work-spec {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .futures-title {
   font-weight: 700;
@@ -104,7 +118,7 @@ body {
   text-transform: uppercase;
   color: var(--color-text);
 }
-.futures-list {
+.futures-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -160,14 +174,20 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-bgr);
 }
+.footer-contact {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
 
 /* Portfolio */
 .filter {
   display: none;
 }
 .filter-list {
-  font-style: inherit;
-  background: var(--filter-color);
+  font-family: inherit;
+  background-color: var(--filter-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
