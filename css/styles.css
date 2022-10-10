@@ -92,6 +92,7 @@ body {
   letter-spacing: 0.06em;
   background-color: var(--logo-color);
   color: var(--primary-bgr);
+  cursor: pointer;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -182,6 +183,10 @@ body {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--logo-color);
+}
 
 /* Portfolio */
 .filter {
@@ -196,16 +201,22 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-
+.list-link {
+  text-decoration: none;
+}
 .list-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--color-text);
+  text-decoration: none;
 }
+
 .list-descrpt {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--secondary-text);
+  text-decoration: none;
 }
