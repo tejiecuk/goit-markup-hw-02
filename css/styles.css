@@ -91,6 +91,7 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--logo-color);
+  color: var(--primary-bgr);
 }
 .hero-btn:hover,
 .hero-btn:focus {
